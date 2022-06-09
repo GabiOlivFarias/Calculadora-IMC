@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body{
+    background-image: url('../css/media/fundoFrutas.avif');
+}
+#corpo{
+    background-color: #FDE8D2;
+    width: 700px;
+    border-radius: 5px; 
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 3px black;
+    padding: 20px;
+}
+h1{
+    color: #FD6104;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+    text-shadow: 3px 3px 3px rgb(155, 153, 153);
+}
+#titulo{
+    background-color: #bdda1a;
+    width: 700px;
+    border-radius: 5px; 
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+abbr{
+    text-decoration: none;
+}
+#foto{
+    position: absolute;
+    left: 840px;
+    top: 175px;
+}
+#totalimc,#res{
+    text-align: start;
+    font-weight: bold;
+    border: solid 1px grey;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#informacoes{
+    background-color: rgba(255, 253, 250, 0.973);
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 3px black;
+    width: 200px;
+    border-radius: 5px; 
+    padding: 10px;
+}
+caption{
+    padding: 10px;
+    font-weight: bold;
+}
+#tabelaInfo{
+    background-color: rgba(255, 253, 250, 0.973);
+    text-align: start;
+    margin: auto;
+    box-shadow: 3px 3px 3px black;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.esq{
+    background-color: lightgrey;
+    border: solid 1px black;
+    width: 50px;
+}
+.dir{
+    background-color: rgb(187, 184, 184);
+    border: solid 1px black;
+    min-width: 200px;
+}
+
+@media(max-width: 900px){
+    img#foto{
+        position:static;
+    }
+}

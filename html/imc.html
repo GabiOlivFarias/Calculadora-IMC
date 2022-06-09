@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/imc.css">
+    <title>IMC</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">
+            <h1>Calculadora de <abbr title="Índice de massa corporal">IMC</abbr></h1>
+        </div>
+    </header>
+    <section id="corpo">
+        <div id="informacoes">
+            <img src="../css/media/Salada.png" alt="prato de salada" id="foto">
+
+    <form action="mailto:gabiofarias42@gmail.com" method="post" id="fcontato">
+    <fieldset id="usuario"> 
+        <legend>Identificação do Usuário</legend> 
+            <p> <label for="cnome">Nome:</label> <input type="text" name="tnome" id="tnome" size="20" maxlength="30" placeholder="Nome completo"></p>
+            <p> <label for="cid">Idade:</label> <input type="number" name="tnome" id="tidade" size="20" maxlength="3" placeholder="Sua idade"></p>
+            <p> <label for="cid">Peso:</label> <input type="number" name="tnome" id="tpeso" size="20" maxlength="6" placeholder="Seu peso"></p>
+            <p> <label for="cid">Altura:</label> <input type="number" name="tnome" id="talt" size="20" maxlength="4" placeholder="Sua altura"></p>           
+        Sexo:
+            <br> <input type="radio" name="tsexo" id="csexom" checked>
+                <label for="csexom">Masculino</br></label>  
+            <input type="radio" name="tsexo" id="csexof">  
+            <label for="csexof">Feminino</label> </p>
+    </fieldset>
+
+            <button id="botEnviar" onclick='calcular()'>Enviar</button>
+            <button id="botLimpar" onclick='limpar()'>Limpar</button> <br>
+            <div>
+                <p id="totalimc">IMC: </p>
+                <p id="res"> Situação:</pi>
+            </div>
+        </div>
+        
+        <div id="tabela">
+            <table id="tabelaInfo"><!--criando tabelas-->
+                <caption> Dados do usuário <span>2022</span> </caption> 
+                <tr><td class="esq">Nome</td><td class="dir" id="linhaNome"></td></tr>
+                <tr><td class="esq">Idade</td> <td class="dir" id="linhaIdade"> </td> </tr>
+                <tr><td class="esq">Peso</td> <td class="dir" id="linhaPeso"> </td> </tr>
+                <tr><td class="esq">Altura</td> <td class="dir" id="linhaAltura"> </td> </tr>
+                </table>
+        </div>   
+    </section>   
+        <script src="../JavaScript/imc.js"></script>
+</body>
+</html>
